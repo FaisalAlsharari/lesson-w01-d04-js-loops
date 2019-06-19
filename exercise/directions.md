@@ -9,7 +9,11 @@ Paste your answers into this file.
 ## Print every number from 0 to 10
 
 ```
-ANSWER HERE
+var printNumber= 0;
+while ( printNumber < 10){
+console.log(printNumber);
+printNumber = printNumber +1;
+}
 ```
 
 <br>
@@ -17,7 +21,11 @@ ANSWER HERE
 ## Print every number from 10 to 0
 
 ```
-ANSWER HERE
+var printNumber= 10;
+while ( printNumber >=0){
+console.log(printNumber);
+printNumber = printNumber -1;
+}
 ```
 
 <br>
@@ -25,7 +33,11 @@ ANSWER HERE
 ## Print every number from 4 to -16
 
 ```
-ANSWER HERE
+var printNumber= 4;
+while ( printNumber >=-16){
+console.log(printNumber);
+printNumber = printNumber -1;
+}
 ```
 
 <br>
@@ -33,7 +45,11 @@ ANSWER HERE
 ## Print every fifth number from 8 to 41
 
 ```
-ANSWER HERE
+var printEveryFifthNumbe= 8;
+while ( printEveryFifthNumbe <=48){
+console.log(printEveryFifthNumbe);
+printEveryFifthNumbe = printEveryFifthNumbe +5;
+}
 ```
 
 <br>
@@ -50,7 +66,16 @@ If the `number` is evenly divisible by 3 AND evenly divisible by 5, print "Fizzb
 
 
 ```
-ANSWER HERE
+let Fizzbuzz = 1;
+while( Fizzbuzz <=100){
+if ( Fizzbuzz % 3==0) 
+console.log(Fizzbuzz+' Fizz');     
+if ( Fizzbuzz % 5==0)
+console.log(Fizzbuzz+' Buzz');
+if ((Fizzbuzz %3 ==0) && (Fizzbuzz%5==0))
+console.log(Fizzbuzz +' Fizzbuzz');
+Fizzbuzz ++;
+}
 ```
 
 <br>
@@ -61,7 +86,12 @@ ANSWER HERE
 Write a for loop that will iterate from 0 to 20. For each iteration, it will check if the current number is even or odd, and report that to the screen (e.g. "2 is even").
 
 ```
-ANSWER HERE
+for ( let i=0; i<=20; i++){
+if( i % 2==0)
+console.log(i + ' even');
+else
+console.log(i + ' odd');
+}
 ```
 
 <br>
@@ -74,7 +104,10 @@ Bonus: Use a nested for loop to show the tables for every multiplier from 1 to 1
 
 
 ```
-ANSWER HERE
+for (let N=0; N<=10; N++){
+
+console.log( N +' * 9 = ' +N*9 );
+}
 ```
 
 <br>
@@ -84,5 +117,12 @@ ANSWER HERE
 Check the results for every value from 60 to 100 - so your log should show "For 89, you got a B. For 90, you got an A.", etc.
 
 ```
-ANSWER HERE
+for (let i = 60; i<=100; i++){
+    if (i >= 80 && i<90)
+    console.log("For "+i+" you got a B.");
+    if (i >= 90 && i<=100)
+    console.log("For "+i+" you got an A.");
+    if ( i >=70 && i<80)
+    console.log("For "+i+" you got a D.");
+}
 ```
